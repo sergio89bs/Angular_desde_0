@@ -1,0 +1,13 @@
+.contador{
+
+    margin-left: 100px;
+    text-align: center;
+    width: 100px;
+    height: 150px;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(216, 246, 159);
+    justify-content: space-around;
+    align-items: center;
+}
