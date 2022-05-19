@@ -1,0 +1,33 @@
+<div class="calculadora">
+<p id="textoPantalla">{{resultado}}<span>{{inicio}}</span></p>
+<p>
+
+<input (click)="reiniciar()" type="button" class="largo" value="C"/>
+</p>
+<p>
+<input (click)="tomaValor($event)" type="button" value="7"/>
+<input (click)="tomaValor($event)" type="button" value="8"/>
+<input (click)="tomaValor($event)" type="button" value="9"/>
+<input (click)="tomaValor($event)" type="button" value="/"/>
+</p>
+<p>
+<input (click)="tomaValor($event)" type="button" value="4"/>
+<input (click)="tomaValor($event)" type="button" value="5"/>
+<input (click)="tomaValor($event)" type="button" value="6"/>
+<input (click)="tomaValor($event)" type="button" value="*"/>
+</p>
+<p>
+<input (click)="tomaValor($event)" type="button" value="1"/>
+<input (click)="tomaValor($event)" type="button" value="2"/>
+<input (click)="tomaValor($event)" type="button" value="3"/>
+<input (click)="tomaValor($event)" type="button" value="-"/>
+
+</p>
+<p>
+<input (click)="tomaValor($event)" type="button" value="0" />
+<input (click)="tomaValor($event)" type="button" value="." />
+<input (click)="tomaValor($event)" type="button" value="+" />
+<input (click)="sumarValores($event)" type="button" value="="/>
+</p>
+
+</div>

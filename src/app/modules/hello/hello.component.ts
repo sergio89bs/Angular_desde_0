@@ -19,12 +19,10 @@ export class HelloComponent implements OnInit {
     this.mensaje = 'Soy una propiedad, llamada desde el constructor de mi clase saludo';
     this.cambioId = 1;  
     
-    for(var i=0; i< 10; i++){
-
       setTimeout(()=>{
         this.cambioId = 'Ahora cambio el valor del id';
       },3000)      
-    }
+
   }
   
 

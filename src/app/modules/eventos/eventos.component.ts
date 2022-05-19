@@ -1,28 +1,45 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-eventos',
   templateUrl: './eventos.component.html',
   styleUrls: ['./eventos.component.css']
 })
+
+
 export class EventosComponent implements OnInit {
 
-  num1:number;
-  num2:number;
-  result:number | string;
+ 
+  option:string;
+  img:any;
 
+  /* --------------- Inicializo las varibles con el constructor --------------- */
   constructor() { 
-    this.num1 = 10
-    this.num2 = 30
-    this.result = ''
+   
+    this.option = 'Paris'
   }
 
   ngOnInit(): void {
-  }
-  sumar(){
 
-    this.result = (this.num1+ this.num2)
-    
   }
+
+
+  // FUNCION PARA CAPTURAR EL VALOR DE UN OPTION SELECT
+  onChange($event:any){    
+    this.option = $event.target.value  
+  }
+  onBlur($event:any){
+    this.option = $event.target.value
+  }
+  
+
+addImg(){
+  
+this.img = "./assets/images/nar.jpg";
+}
+removeImg(){
+  this.img = ""
+}
 
 }
+

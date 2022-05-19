@@ -9,21 +9,55 @@
 
 <br>
 <br>
-<br>
 
 <!-- ----------------------------------------------------------------------- -->
 <!--                      JERARQUIA DE LOS COMPONENTES                       -->
 <!-- ----------------------------------------------------------------------- -->
 <h5>JERARQUIA DE COMPONENTES</h5>
 <app-padre></app-padre>
-
+<br>
+<br>
 <!-- ----------------------------------------------------------------------- -->
 <!--                    EVENTOS CON COMPONENTES                      -->
 <!-- ----------------------------------------------------------------------- -->
 <h5>Eventos con los componentes</h5>
 <app-eventos></app-eventos>
+<br>
+<br>
 
-
+<h5>Ejercicio cronometro</h5>
 <app-cronometro></app-cronometro>
 <br>
 <app-cronometro></app-cronometro>
+<br>
+<br>
+<!-- ----------------------------------------------------------------------- -->
+<!--                               CALCULADORA                               -->
+<!-- ----------------------------------------------------------------------- -->
+<h5>Ejercicio calculadora</h5>
+<app-calculadora></app-calculadora>
+<br>
+<br>
+<h5>Decoradores Angular</h5>
+<app-input mensaje="Parametro pasado desde el HTML"></app-input>
+<app-input></app-input>
+
+<h5>Property Binding (Paso de variables como parametros para metodos de otros componentes</h5>
+<app-binding></app-binding>
+
+<br>
+<br>
+
+<h5>Ejercicio suma usando decorador input</h5>
+<!-- Podemos poner entre corchetes un atributo y asi pasa a ser código JS, de esta forma se puede recivir el valor tipo number -->
+<app-suma-dinamica num1="12" [num2]="20"></app-suma-dinamica>
+<app-suma-dinamica ></app-suma-dinamica>
+<br>
+<br>
+<h5>Cronometro usando el decorador output para mostrar por consola la finalización de cada uno</h5>
+<app-output [numeroInicial]="2"></app-output>
+<app-output [numeroInicial]="4"></app-output>
+<app-output [numeroInicial]="6"></app-output>
+<app-output [numeroInicial]="12"></app-output>
+
+
