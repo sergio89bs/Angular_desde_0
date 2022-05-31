@@ -55,9 +55,15 @@
 <br>
 <br>
 <h5>Cronometro usando el decorador output para mostrar por consola la finalización de cada uno</h5>
-<app-output [numeroInicial]="2"></app-output>
-<app-output [numeroInicial]="4"></app-output>
-<app-output [numeroInicial]="6"></app-output>
-<app-output [numeroInicial]="12"></app-output>
+<!-- Ejemplo de como pasar un numero de un array en componente padre -->
+<app-output [numeroInicial]="numerosCrono[1]" (finalizacionCrono)="avisamePadre($event)"></app-output>
+<app-output [numeroInicial]="4" (finalizacionCrono)="avisamePadre($event)"></app-output>
+<app-output [numeroInicial]="numerosCrono[0]" (finalizacionCrono)="avisamePadre($event)"></app-output>
+<app-output [numeroInicial]="12" (finalizacionCrono)="avisamePadre($event)"></app-output>
+<br>
+<br>
+<br>
+<h5>TWO WAYS BIDDING O PASO DE DATOS ENTRE COMPONENTES</h5>
+<app-two-ways-bidding></app-two-ways-bidding>
 
 

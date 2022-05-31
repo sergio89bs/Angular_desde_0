@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './modules/hello/hello.component';
@@ -13,6 +14,10 @@ import { InputComponent } from './modules/decorations/input/input.component';
 import { BindingComponent } from './modules/decorations/binding/binding.component';
 import { SumaDinamicaComponent } from './modules/suma-dinamica/suma-dinamica.component';
 import { OutputComponent } from './modules/decorations/output/output.component';
+import { TwoWaysBiddingComponent } from './modules/two-ways-bidding/two-ways-bidding.component';
+import { FormularioComponent } from './app-lista-tareas/formulario/formulario.component';
+import { ListadoComponent } from './app-lista-tareas/listado/listado.component';
+
 
 @NgModule({
   declarations: [
@@ -27,10 +32,14 @@ import { OutputComponent } from './modules/decorations/output/output.component';
     InputComponent,
     BindingComponent,
     SumaDinamicaComponent,
-    OutputComponent
+    OutputComponent,
+    TwoWaysBiddingComponent,
+    FormularioComponent,
+    ListadoComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

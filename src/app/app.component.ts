@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'curso_angular';
+  numerosCrono:number[];
+
+  constructor(){
+   this.numerosCrono = [1,33,98];
+  }
+
+  avisamePadre($event: any){
+    console.log($event);
+  }
 }

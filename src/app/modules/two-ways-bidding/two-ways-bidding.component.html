@@ -1,0 +1,16 @@
+<input type="text" [(ngModel)]="campoTexto">
+<h3>Variable: {{campoTexto}}</h3>
+<button (click)="onClick()">Cambia valor variable</button>
+<br>
+<br>
+<br>
+<div>
+    <h2>Nombre:</h2>
+    <input type="text" [(ngModel)]="persona.nombre">
+    <h2>Edad:</h2>
+    <input type="text" [(ngModel)]="persona.edad">
+    <h2>Ciudad:</h2>
+    <input type="text" [(ngModel)]="persona.ciudad">
+</div>
+
+<h3>Mi nombre es {{persona.nombre}}, tengo {{persona.edad}} y vivo en {{persona.ciudad}}</h3>
