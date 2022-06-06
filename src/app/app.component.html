@@ -38,8 +38,9 @@
 <app-calculadora></app-calculadora>
 <br>
 <br>
-<h5>Decoradores Angular</h5>
-<app-input mensaje="Parametro pasado desde el HTML"></app-input>
+<h5>Decorador Input Angular</h5>
+<!-- Decorador input -->
+<app-input mensaje="Parametro pasado desde el HTML padre"></app-input>
 <app-input></app-input>
 
 <h5>Property Binding (Paso de variables como parametros para metodos de otros componentes</h5>
@@ -50,11 +51,12 @@
 
 <h5>Ejercicio suma usando decorador input</h5>
 <!-- Podemos poner entre corchetes un atributo y asi pasa a ser código JS, de esta forma se puede recivir el valor tipo number -->
-<app-suma-dinamica num1="12" [num2]="20"></app-suma-dinamica>
+<app-suma-dinamica num1="12" [num2]="20"></app-suma-dinamica>ç
+<!-- Los valores vienen dados desde el componente -->
 <app-suma-dinamica ></app-suma-dinamica>
 <br>
 <br>
-<h5>Cronometro usando el decorador output para mostrar por consola la finalización de cada uno</h5>
+<h5>Cronometro usando el decorador Output para mostrar por consola la finalización de cada uno</h5>
 <!-- Ejemplo de como pasar un numero de un array en componente padre -->
 <app-output [numeroInicial]="numerosCrono[1]" (finalizacionCrono)="avisamePadre($event)"></app-output>
 <app-output [numeroInicial]="4" (finalizacionCrono)="avisamePadre($event)"></app-output>
@@ -65,5 +67,17 @@
 <br>
 <h5>TWO WAYS BIDDING O PASO DE DATOS ENTRE COMPONENTES</h5>
 <app-two-ways-bidding></app-two-ways-bidding>
+<br>
+<br>
+<br>
+<h5>DIRECTIVAS DE ANGULAR</h5>
+<br>
+<h5>Directiva ngStyle</h5>
+<app-ng-style></app-ng-style>
+<br>
+<br>
+<br>
+<h5>Directiva ngClass</h5>
+<app-ng-class></app-ng-class>
 
 

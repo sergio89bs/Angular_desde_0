@@ -15,8 +15,9 @@ import { BindingComponent } from './modules/decorations/binding/binding.componen
 import { SumaDinamicaComponent } from './modules/suma-dinamica/suma-dinamica.component';
 import { OutputComponent } from './modules/decorations/output/output.component';
 import { TwoWaysBiddingComponent } from './modules/two-ways-bidding/two-ways-bidding.component';
-import { FormularioComponent } from './app-lista-tareas/formulario/formulario.component';
-import { ListadoComponent } from './app-lista-tareas/listado/listado.component';
+import { NgStyleComponent } from './directivas/ng-style/ng-style.component';
+import { NgClassComponent } from './directivas/ng-class/ng-class.component';
+
 
 
 @NgModule({
@@ -34,8 +35,8 @@ import { ListadoComponent } from './app-lista-tareas/listado/listado.component';
     SumaDinamicaComponent,
     OutputComponent,
     TwoWaysBiddingComponent,
-    FormularioComponent,
-    ListadoComponent
+    NgStyleComponent,
+    NgClassComponent
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-two-ways-bidding',
   templateUrl: './two-ways-bidding.component.html',
@@ -9,6 +10,7 @@ export class TwoWaysBiddingComponent implements OnInit {
 
   campoTexto:string;
   persona:any;
+  newtask: Task;
 
   constructor() { 
     this.campoTexto = 'Holaaaa'
@@ -17,6 +19,7 @@ export class TwoWaysBiddingComponent implements OnInit {
       edad: '24',
       ciudad: 'Barcelona'
     }
+
   }
 
   ngOnInit(): void {

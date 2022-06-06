@@ -1,0 +1,32 @@
+
+<!-- Modificando estilos desde un objeto  -->
+<p [ngStyle]="{color:'red', fontSize:'34px'}">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, rem! Officiis, praesentium.
+</p>
+
+<!-- Modificando estilos desde el componente -->
+
+<p [ngStyle]="estilos">
+    My name is Sergio and I'm from Spain, actually I'm living in Binefar with my girlfriend Monica.
+</p>
+
+<!-- Cambiando estilos con un metodo -->
+
+<p [ngStyle]="estiBoton">
+    It will change the color of the text when someone press the buttons
+</p>
+<button [ngStyle]="{color:'blue'}" (click)="cambiaColor('blue')">Cambiar color</button>
+<button [ngStyle]="{color:'red'}" (click)="cambiaColor('red')">Cambiar color</button>
+<button [ngStyle]="{color:'orange'}" (click)="cambiaColor('orange')">Cambiar collor</button>
+
+<!-- Usando un input con ngModel para cambiar el color de un texto -->
+
+<p [ngStyle]="tamanyo">
+    Another text to change the size using an input, so please write a number inside (number + px) or move the circle
+</p>
+<div>
+<!-- Se puede escribir el tamaño desde un input -->
+<input type="text" [(ngModel)]="tamanyo.fontSize"  placeholder="write a size + px">
+<!-- Otros eventos para modificar tamaño de texto-->
+<input type="range" min="1" max="50" step="5" (change)="moveInput($event)">
+</div>
