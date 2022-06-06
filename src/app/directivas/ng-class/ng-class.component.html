@@ -1,0 +1,10 @@
+
+
+<!-- Agrego clases desde el componente -->
+<div [ngClass]="clases"></div>
+<br>
+<div [ngClass]="arrayClases"></div>
+<br>
+<!-- Modificando clases dinamicamente (Con un valor booleano, activamos o desactivamos las clases) -->
+<div [ngClass]="{semaforo: true , rojo: (colorSemaforo === 'r'), amarillo: (colorSemaforo === 'a'), verde: (colorSemaforo === 'v')}">
+</div>
